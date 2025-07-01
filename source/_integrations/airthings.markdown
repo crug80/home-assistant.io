@@ -15,11 +15,14 @@ ha_config_flow: true
 ha_platforms:
   - sensor
 ha_integration_type: integration
+ha_dhcp: true
 ---
 
 Integrates Airthings sensors into Home Assistant.
 
 [Airthings](https://www.airthings.com/) provide different sensors for measuring the air quality. The focus specially on Radon sensors.
+
+While this integration works without an Airthings SmartLink hub, using one will provide live updates to your sensor data. Without a hub, you'll need to rely on the Airthings mobile app to sync data over Bluetooth and upload it to the cloud.
 
 Requires Airthings hardware and a valid Airthings Dashboard login.
 
